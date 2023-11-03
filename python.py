@@ -8,7 +8,7 @@ with open('input.yaml', 'r')as file:
 #print(jsonStrData)
 
 for key, value in data.items();
-	os.environ[key] = str(value)'
+	os.environ["{key}"] = value
 
 #Set Output Variable
 #output_value = data.get('R_VERSION')
