@@ -2,7 +2,7 @@ import yaml
  
 # Parse the YAML file
 
-with open('yourfile.yaml', 'r') as file:
+with open('input.yaml', 'r') as file:
 
     data = yaml.safe_load(file)
  
