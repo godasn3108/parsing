@@ -1,5 +1,5 @@
-R_VERSION: 4.2.4
-Baselayername: Centos
+R_VERSION: 4.2.6
+Baselayername: C@entos
 Baselayertag: 8.6-754
 Build_layer_name: ros
 Build_layer_tag: 2023_08_21
