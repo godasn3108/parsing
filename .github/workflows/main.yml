@@ -36,10 +36,10 @@ jobs:
         id: python-script
         run: python python.py
     
-      #- name: Use .env file
-      # run: |
-      #   source .env
-      #   cat .env >> $GITHUB_ENV
+      - name: Use .env file
+        run: |
+         source .env
+         cat .env >> $GITHUB_ENV
       -
         name: Update R version
         run: |
