@@ -39,7 +39,7 @@ jobs:
       - name: Use .env file
         run: |
           source .env
-          echo $MY_VAR
+          cat .env >> $GITHUB_ENV
       -
         name: Update R version
         run: |
