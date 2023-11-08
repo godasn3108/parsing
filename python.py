@@ -1,15 +1,15 @@
 import yaml
-import json
+ 
+# Parse the YAML file
 
-with open('input.yaml', 'r')as file:
-	data = yaml.safe_load(file)
+with open('yourfile.yaml', 'r') as file:
 
-#jsonStrData = json.dumps(data) 
-#print(jsonStrData)
+    data = yaml.safe_load(file)
+ 
+# Write the data to a .env file
 
-for key,value in data.items():
-	os.environ["{key}"] = value
+with open('.env', 'w') as file:
 
-#Set Output Variable
-#output_value = data.get('R_VERSION')
-print(f"::set-output name=data::{jsonStrData}")
+    for key, value in data.items():
+
+        file.write(f'{key}={value}\n')
