@@ -7,7 +7,7 @@ with open('input.yaml', 'r')as file:
 #jsonStrData = json.dumps(data) 
 #print(jsonStrData)
 
-for key, value in data.items();
+for key,value in data.items():
 	os.environ["{key}"] = value
 
 #Set Output Variable
