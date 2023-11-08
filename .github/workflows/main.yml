@@ -35,9 +35,11 @@ jobs:
         name: Execute Python script
         id: python-script
         run: python python.py
-      -
-        name: Check Variables
-        run: env
+    
+      - name: Use .env file
+        run: |
+          source .env
+          echo $MY_VAR
       -
         name: Update R version
         run: |
